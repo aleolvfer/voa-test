@@ -1,32 +1,61 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { box-sizing: border-box; margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } table { border-collapse: collapse; border-spacing: 0; }
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "Scotch Display";
-  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"),
-       url("../fonts/ScotchDisplay-Medium.woff") format("woff");
+  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"), url("../fonts/ScotchDisplay-Medium.woff") format("woff");
 }
 
 body {
   font-family: "Space Mono", monospace;
 }
-  
+
 header {
   width: 100vw;
-  background-color:#FFF;
+  background-color: #FFF;
   font-size: 12px;
   padding: 18px 0;
   position: absolute;
   border-bottom: #DDD 2px solid;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 85%;
 }
 
@@ -40,6 +69,8 @@ li {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
@@ -69,10 +100,11 @@ li {
 .box-2 h2 {
   font-family: "Scotch Display";
   font-size: 32px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   z-index: -1;
   line-height: 36px;
 }
+
 .wave-container h2 {
   display: none;
 }
@@ -83,12 +115,16 @@ li {
 }
 
 .box-2 legend {
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 .div-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .div-icons p {
@@ -96,8 +132,13 @@ li {
 }
 
 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .icons img {
@@ -105,7 +146,6 @@ li {
   margin: 5px 80px;
   cursor: pointer;
 }
-
 
 .box-2 input {
   width: 50%;
@@ -131,3 +171,4 @@ li {
 footer {
   display: none;
 }
+/*# sourceMappingURL=index.css.map */
