@@ -44,25 +44,17 @@ li {
   height: 100vh;
 }
 
-.box-1 {
-  width: 50vw;
-  height: 100vh;
-}
-
-.box-1 img {
-  max-width: 923.5px;
-  min-width: 710px;
-  height: auto; 
-  position: relative;
-  left: -200px;
-  z-index: -1;
-  margin-top: 18px;
+.img-bg {
+  max-width: 950px;
+  height: auto;
+  margin: 22px 0 0 -200px;
 }
 
 .box-2 {
-  width: 50vw;
+  width: 90vw;
   background-color: #FFF;
   padding: 100px 0;
+  margin-left: -30px;
 }
 
 .logotipo {
