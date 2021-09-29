@@ -1,0 +1,27 @@
+@media screen and (max-width: 489px) {
+
+  header ul{
+    width: 80%;
+    font-size: 16px;
+    align-items: unset;
+
+    flex-direction: column;
+  }
+
+  header li:first-child{
+    list-style: disc;
+  }
+
+  header li {
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .img-bg {
+    order: 2;
+  }
+}
