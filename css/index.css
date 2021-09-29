@@ -44,6 +44,10 @@ li {
   height: 100vh;
 }
 
+.logotipo-mobile {
+  display: none;
+}
+
 .img-bg {
   max-width: 950px;
   height: auto;
@@ -57,17 +61,20 @@ li {
   margin-left: -30px;
 }
 
-.logotipo {
+.box-2 .logotipo {
   width: 100%;
   margin-bottom: 30px;
 }
 
-h2 {
+.box-2 h2 {
   font-family: "Scotch Display";
   font-size: 32px;
   margin-bottom:10px;
   z-index: -1;
   line-height: 36px;
+}
+.wave-container h2 {
+  display: none;
 }
 
 .box-2 .logotipo img {
@@ -99,6 +106,7 @@ h2 {
   cursor: pointer;
 }
 
+
 .box-2 input {
   width: 50%;
   padding: 10px;
@@ -118,4 +126,8 @@ h2 {
   color: white;
   font-family: "Space Mono", monospace;
   font-size: 10px;
+}
+
+footer {
+  display: none;
 }

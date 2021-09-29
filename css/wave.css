@@ -1,0 +1,37 @@
+@media screen and (max-width: 489px) {
+  .wave-container {
+    position: relative;
+    background: #000;
+    height: 30vh;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 86px;
+    width: 100%;
+    background: #000;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #000;
+    left: -1.5%;
+    top: 40%;
+  }
+}

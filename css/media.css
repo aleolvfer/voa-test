@@ -21,7 +21,68 @@
     flex-direction: column;
   }
 
+  .logotipo-mobile {
+    margin: 200px 40px 0 0;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logotipo-mobile img {
+    width: 25%;
+  }
+
   .img-bg {
-    order: 2;
+    margin: -30px 0 0 -180px;
+    z-index: -1;
+  }
+
+  .box-2 {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .box-2 .logotipo {
+    display: none;
+  }
+
+  .box-2 h2 {
+    display: none;
+    /* margin: 100px 0 20px 0; */
+  }
+
+  .wave-container h2 {
+    display: block;
+    font-family: "Scotch Display";
+    font-size: 32px;
+    line-height: 36px;
+    color: white;
+    margin: 0 20px;
+  }
+
+  .div-icons {
+    margin: 50px 20px;
+  }
+
+  .div-icons .icons img {
+    margin: 5px 20px;
+  }
+
+  .box-2 form {
+    margin: 100px 20px;
+  }
+
+  .box-2 form fieldset {
+    margin: 5px;
+  }
+
+  .box-2 form input {
+    width: 65%;
+    margin: 2px 0;
+  }
+
+  .box-2 form button {
+    width: 20%;
   }
 }
