@@ -67,17 +67,16 @@
 
     document.querySelector("button").addEventListener("click", (event) => {
       event.preventDefault();
-
       let text = document.getElementById("text");
 
       let email = document.getElementById("email").value;
 
       var re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (re.test(email)) {
-        text.innerHTML = "Email válido";
+        text.innerHTML = "&check; Email válido";
         text.style.color = "#00ff00"
       } else {
-        text.innerHTML = "Email inválido";
+        text.innerHTML = "&cross; Por favor, insira um email válido";
         text.style.color = "#ff0000"
       }
     });
