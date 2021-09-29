@@ -47,13 +47,14 @@
         </div>
       </div>
 
-      <form>
+      <form action="#">
         <fieldset>
           <legend class="legend">Quer saber mais?</legend>
           <input type="text" name="email" id="email" placeholder="seu email" required />
           <button>enviar</button>
         </fieldset>
       </form>
+      <span id="text"></span>
 
     </div>
   </div>
@@ -62,6 +63,27 @@
     <p>© All Rights Reserved</p>
   </footer>
 
+  <script>
+
+    document.querySelector("button").addEventListener("click", (event) => {
+      event.preventDefault();
+
+      let text = document.getElementById("text");
+
+      let email = document.getElementById("email").value;
+
+      var re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (re.test(email)) {
+        text.innerHTML = "Email válido";
+        text.style.color = "#00ff00"
+      } else {
+        text.innerHTML = "Email inválido";
+        text.style.color = "#ff0000"
+      }
+    });
+
+
+  </script>
 </body>
 
 </html>
