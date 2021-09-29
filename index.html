@@ -70,14 +70,6 @@
       let text = document.getElementById("text");
       let email = document.getElementById("email").value;
 
-      let voaApi = async address => {
-        let response = await fetch(`http://voaremos-services.com.br/api_vt/test/contact/test@frontend.com`);
-        return response.json();
-      }
-
-      console.log(response);
-
-
       var re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (re.test(email)) {
         text.innerHTML = "&check; Email válido";
