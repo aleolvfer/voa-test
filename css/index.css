@@ -1,27 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+* {
+  padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 @font-face {
@@ -34,141 +16,30 @@ body {
 }
 
 header {
-  width: 100vw;
-  background-color: #FFF;
-  font-size: 12px;
-  padding: 18px 0;
-  position: absolute;
-  border-bottom: #DDD 2px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 85%;
-}
-
-li:first-child {
-  list-style: none;
-}
-
-li {
-  text-transform: uppercase;
-  letter-spacing: 7.5px;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-}
-
-.logotipo-mobile {
-  display: none;
-}
-
-.img-bg {
-  max-width: 950px;
-  height: auto;
-  margin: 22px 0 0 -200px;
-}
-
-.box-2 {
-  width: 90vw;
-  background-color: #FFF;
-  padding: 100px 0;
-  margin-left: -30px;
-}
-
-.box-2 .logotipo {
   width: 100%;
-  margin-bottom: 30px;
+  padding: 18px;
+  border-bottom: 2px solid #ddd;
 }
 
-.box-2 h2 {
-  font-family: "Scotch Display";
-  font-size: 32px;
-  margin-bottom: 10px;
-  z-index: -1;
-  line-height: 36px;
-}
-
-.wave-container h2 {
-  display: none;
-}
-
-.box-2 .logotipo img {
-  width: 12%;
-  margin-left: 70%;
-}
-
-.box-2 legend {
-  margin: 20px 0;
-}
-
-.div-icons {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.div-icons p {
-  margin: 10px 0 80px 0;
-}
-
-.icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.icons img {
-  width: 15px;
-  margin: 5px 80px;
-  cursor: pointer;
-}
-
-.box-2 input {
-  width: 50%;
-  padding: 10px;
-  outline: none;
-}
-
-::-webkit-input-placeholder {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
   font-family: "Space Mono", monospace;
-  color: #DDD;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5.6px;
 }
 
-.box-2 button {
-  padding: 12px;
-  background-color: black;
-  border: solid 1px black;
-  width: 12%;
-  color: white;
-  font-family: "Space Mono", monospace;
-  font-size: 10px;
-}
-
-footer {
-  display: none;
+header ul li:first-child {
+  list-style: none;
 }
 /*# sourceMappingURL=index.css.map */
