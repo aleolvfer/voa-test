@@ -21,10 +21,10 @@
   }
   
   .wave::before {
-    width: 55%;
+    width: 53.2%;
     height: 109%;
     background-color: #fff;
-    right: -1.5%;
+    right: 0%;
     top: 60%;
   }
   .wave::after {
