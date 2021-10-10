@@ -13,6 +13,7 @@
 
 body {
   font-family: "Space Mono", monospace;
+  background-color: burlywood;
 }
 
 header {
@@ -21,9 +22,12 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  opacity: 50%;
   width: 100%;
   padding: 18px;
+  background-color: #fff;
   border-bottom: 2px solid #ddd;
+  position: absolute;
 }
 
 header ul {
@@ -41,5 +45,59 @@ header ul {
 
 header ul li:first-child {
   list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  border: 2px solid black;
+  max-width: 1200px;
+}
+
+.box-image {
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.box-image .img-bg {
+  max-width: 950px;
+  height: auto;
+}
+
+.box-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: red;
+  opacity: 40%;
+  margin-right: 120px;
+}
+
+.box-register .logotipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.box-register .logotipo img {
+  width: 16%;
+}
+
+.box-register h2 {
+  font-family: "Scotch Display";
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 150px;
+}
+
+.box-register .div-icons img {
+  width: 3%;
 }
 /*# sourceMappingURL=index.css.map */

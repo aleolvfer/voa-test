@@ -22,15 +22,18 @@ $scotchDisplayFont: "Scotch Display";
 
 body {  
   font-family: $spaceMonoFont;
+  background-color: burlywood
 }
 
 header {
   @include flex-around();
+  opacity: 50%;
 
   width: 100%;
   padding: 18px;
+  background-color: #fff;
   border-bottom: 2px solid #ddd;
-
+  position: absolute;
 
   ul {
     @include flex-around();
@@ -46,4 +49,54 @@ header {
     }
   }
 }
+
+.container {
+  margin: 0 auto;
+  border: 2px solid black;
+  max-width: 1200px;
+
+}
+
+.box-image {
+  height: 100vh;
+  background-color: aquamarine;
+  
+  .img-bg {
+    max-width: 950px;
+    height: auto;
+  }
+}
+
+
+.box-register {
+  display: flex;
+  flex-direction: column;
+
+  background-color: red;
+  opacity: 40%;
+  margin-right: 120px;
+
+  .logotipo {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 50px;
+
+    img {
+      width: 16%;
+    }
+  }
+
+  h2 {
+    font-family: $scotchDisplayFont;
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: 150px;
+  }
+
+  .div-icons img {
+    width: 3%;
+  }
+}
+
 
