@@ -19,10 +19,8 @@ $scotchDisplayFont: "Scotch Display";
   justify-content: space-around;
 }
 
-
 body {  
   font-family: $spaceMonoFont;
-  background-color: burlywood
 }
 
 header {
@@ -51,15 +49,29 @@ header {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
-  border: 2px solid black;
-  max-width: 1200px;
+  border: 0px 2px solid black;
+  max-width: 100vw;
+  max-height: 100%;
+
+  display: grid;
+  grid-template-areas: 
+  "box-imgage logotipo"
+  "box-imgage text"
+  "box-imgage div-icons"
+  "box-imgage form";
 
 }
 
 .box-image {
-  height: 100vh;
-  background-color: aquamarine;
+  width: 50%;
+  max-height: 100vh;
+
+  margin-left: -120px;
+
+  grid-area: "box-imgage";
+  grid-row: box-imgage;
   
   .img-bg {
     max-width: 950px;
@@ -68,35 +80,53 @@ header {
 }
 
 
-.box-register {
+
+.logotipo {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
 
-  background-color: red;
-  opacity: 40%;
-  margin-right: 120px;
+  grid-area: "logotipo";
 
-  .logotipo {
-    display: flex;
-    justify-content: flex-end;
+  width: 220px;
+  margin: 100px 0px 0 0;
 
-    margin-bottom: 50px;
-
-    img {
-      width: 16%;
-    }
-  }
-
-  h2 {
-    font-family: $scotchDisplayFont;
-    font-size: 32px;
-    font-weight: 200;
-    margin-bottom: 150px;
-  }
-
-  .div-icons img {
-    width: 3%;
+  img {
+    width: 80px;
+    height: 35px;
   }
 }
+
+.text {
+  font-family: $scotchDisplayFont;
+  font-size: 32px;
+  font-weight: 200;
+  
+  grid-area: "text";
+}
+
+.div-icons {
+  display: flex;
+  justify-content: space-between;
+
+ 
+  grid-area: "div-icons";
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+
+    img{
+      width: 15%;
+    }
+  }
+}
+
+.form {
+
+  fieldset {
+    border: none;
+  }
+}
+  
 
 
