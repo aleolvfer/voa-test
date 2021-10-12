@@ -1,4 +1,4 @@
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
 
   header ul{
     width: 80%;
@@ -91,6 +91,7 @@
     margin-top: 700px;
     padding: 20px;
     text-align: center;
-    border-top: 2px solid #ddd;
+    font-size: 10px;
+    color: #ccc;
   }
 }
