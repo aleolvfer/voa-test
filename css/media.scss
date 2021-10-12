@@ -1,58 +1,60 @@
 @media screen and (max-width: 560px) {
-  header ul {
+
+  header ul{
     width: 80%;
     font-size: 16px;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: unset;
+
+    flex-direction: column;
   }
-  header li:first-child {
+
+  header li:first-child{
     list-style: disc;
   }
+
   header li {
     letter-spacing: 3px;
     line-height: 30px;
   }
+
   .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .logotipo-mobile {
     margin: 200px 40px 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
+
   .logotipo-mobile img {
     width: 25%;
   }
+
   .img-bg {
     margin: 30px 0 0 -180px;
     z-index: -1;
   }
+
   .box-2 {
     width: 100%;
     margin-left: 0;
     padding: 0;
   }
+
   .box-2 .logotipo {
     display: none;
   }
+
   .box-2 h2 {
     display: none;
   }
+
   .wave-container {
     display: block;
   }
+
   .wave-container h2 {
     display: block;
     font-family: "Scotch Display";
@@ -61,25 +63,32 @@
     color: white;
     margin: 0 20px;
   }
+
   .div-icons {
     margin: 50px 20px;
   }
+
   .div-icons .icons img {
     margin: 5px 20px;
   }
+
   .box-2 form {
     margin: 100px 20px;
   }
+
   .box-2 form fieldset {
     margin: 5px;
   }
+
   .box-2 form input {
     width: 65%;
     margin: 2px 0;
   }
+
   .box-2 form button {
     width: 20%;
   }
+
   footer {
     display: block;
     margin-top: 700px;
@@ -89,4 +98,3 @@
     color: #ccc;
   }
 }
-/*# sourceMappingURL=media.css.map */

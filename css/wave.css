@@ -1,8 +1,8 @@
-@media screen and (max-width: 489px) {
+@media screen and (max-width: 560px) {
   .wave-container {
     position: relative;
     background: #000;
-    height: 30vh;
+    height: 32vh;
   }
   
   .wave {
