@@ -10,6 +10,7 @@ function emailJaCadastrado(input) {
   input.style.fontFamily = "Space Mono, nomoscape";
   input.value = "";
   input.placeholder = "e-mail já cadastrado ;)";
+  resetInput(input);
 }
 
 function emailCadastrado(input) {
@@ -17,6 +18,7 @@ function emailCadastrado(input) {
   input.style.fontFamily = "Space Mono, nomoscape";
   input.value = "";
   input.placeholder = "e-mail cadastrado!";
+  resetInput(input);
 }
 
 function emailInvalido(input) {
@@ -24,4 +26,5 @@ function emailInvalido(input) {
   input.style.fontFamily = "Space Mono, nomoscape";
   input.value = "";
   input.placeholder = "e-mail inválido.";
+  resetInput(input);
 }

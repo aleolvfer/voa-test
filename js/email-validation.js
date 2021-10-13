@@ -13,13 +13,12 @@ document.querySelector("button").addEventListener("click", async event => {
   let re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (emailQuery.status == 200) {
     emailJaCadastrado(input);
-    resetInput(input);
+
   } else if (re.test(email)) {
     emailCadastrado(input)
-    resetInput(input);
+
   } else {
     emailInvalido(input)
-    resetInput(input);
   }
 
 });
