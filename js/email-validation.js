@@ -1,19 +1,25 @@
-document.querySelector("button").addEventListener("click", (event) => {
+document.querySelector("button").addEventListener("click", async event => {
   event.preventDefault();
+
   let input = document.getElementById("email");
   let email = document.getElementById("email").value;
 
-  input.addEventListener("click", () => {
-    input.style.webkitTextFillColor = "#DDD";
-    input.value = "";
-  });
+  let url = `https://voaremos-services.com.br/api_vt/test/contact/${email}`;
+  let response = await fetch(url);
+  let emailQuery = await response.json();
+  console.log(emailQuery.status);
 
-  var re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-  if (re.test(email)) {
-    input.style.webkitTextFillColor = "#44ec44";
-    input.value = "Email cadastrado!";
+
+  let re = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (emailQuery.status == 200) {
+    emailJaCadastrado(input);
+    resetInput(input);
+  } else if (re.test(email)) {
+    emailCadastrado(input)
+    resetInput(input);
   } else {
-    input.style.webkitTextFillColor = "#dd0000";
-    input.value = "Email inválido.";
+    emailInvalido(input)
+    resetInput(input);
   }
+
 });
