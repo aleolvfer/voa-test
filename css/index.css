@@ -152,6 +152,7 @@ ul li {
   padding: 10px;
   outline: none;
   border: 1px solid #999;
+  font-family: "Space Mono", monospace;
 }
 
 ::-webkit-input-placeholder {
@@ -171,5 +172,14 @@ ul li {
 
 footer {
   display: none;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
 }
 /*# sourceMappingURL=index.css.map */

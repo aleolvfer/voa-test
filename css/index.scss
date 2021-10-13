@@ -120,6 +120,7 @@ ul {
   padding: 10px;
   outline: none;
   border: 1px solid #999;
+  font-family: $primaryFont;
 }
 
 ::-webkit-input-placeholder {
@@ -139,4 +140,15 @@ ul {
 
 footer {
   display: none;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+
+  p {
+    text-align: center;
+    font-size: 10px;
+    color: #ccc;
+  }
 }
+
+
