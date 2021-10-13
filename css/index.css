@@ -26,7 +26,8 @@ table {
 
 @font-face {
   font-family: "Scotch Display";
-  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"), url("../fonts/ScotchDisplay-Medium.woff") format("woff");
+  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"), 
+  url("../fonts/ScotchDisplay-Medium.woff") format("woff");
 }
 
 body {
@@ -111,6 +112,7 @@ ul li {
 
 .box-2 .logotipo img {
   width: 12%;
+  height: auto;
   margin-left: 70%;
 }
 
@@ -143,6 +145,7 @@ ul li {
 
 .icons img {
   width: 15px;
+  height: auto;
   margin: 5px 60px;
   cursor: pointer;
 }
