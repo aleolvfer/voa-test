@@ -26,8 +26,7 @@ table {
 
 @font-face {
   font-family: "Scotch Display";
-  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"), 
-  url("../fonts/ScotchDisplay-Medium.woff") format("woff");
+  src: url("../fonts/ScotchDisplay-Medium.woff2") format("woff2"), url("../fonts/ScotchDisplay-Medium.woff") format("woff");
 }
 
 body {
@@ -74,6 +73,8 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  position: fixed;
+  z-index: -1;
 }
 
 .logotipo-mobile {
@@ -81,16 +82,16 @@ ul li {
 }
 
 .img-bg {
-  max-width: 950px;
-  height: auto;
+  width: 950px;
+  height: 634px;
   margin: 22px 0 0 -100px;
 }
 
 .box-2 {
-  width: 90vw;
+  width: 45vw;
   background-color: #FFF;
   padding: 100px 0;
-  margin-left: -30px;
+  margin-left: -50px;
 }
 
 .box-2 .logotipo {
@@ -112,7 +113,6 @@ ul li {
 
 .box-2 .logotipo img {
   width: 12%;
-  height: auto;
   margin-left: 70%;
 }
 
@@ -145,14 +145,13 @@ ul li {
 
 .icons img {
   width: 15px;
-  height: auto;
   margin: 5px 60px;
   cursor: pointer;
 }
 
 .box-2 input {
   width: 50%;
-  padding: 10px;
+  padding: 8px;
   outline: none;
   border: 1px solid #999;
   font-family: "Space Mono", monospace;

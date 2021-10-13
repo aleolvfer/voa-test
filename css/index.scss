@@ -50,6 +50,9 @@ ul {
 .container {
   display: flex;
   height: 100vh;
+
+  position: fixed;
+  z-index: -1;
 }
 
 .logotipo-mobile {
@@ -57,16 +60,16 @@ ul {
 }
 
 .img-bg {
-  max-width: 950px;
-  height: auto;
+  width: 950px;
+  height: 634px;
   margin: 22px 0 0 -100px;
 }
 
 .box-2 {
-  width: 90vw;
+  width: 45vw;
   background-color: #FFF;
   padding: 100px 0;
-  margin-left: -30px;
+  margin-left: -50px;
 }
 
 .box-2 .logotipo {
@@ -117,7 +120,7 @@ ul {
 
 .box-2 input {
   width: 50%;
-  padding: 10px;
+  padding: 8px;
   outline: none;
   border: 1px solid #999;
   font-family: $primaryFont;
