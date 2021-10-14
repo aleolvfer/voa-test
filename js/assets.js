@@ -9,7 +9,7 @@ function emailJaCadastrado(input) {
   input.style.webkitTextFillColor = "#e8d52d";
   input.style.fontFamily = "Space Mono, nomoscape";
   input.value = "";
-  input.placeholder = "e-mail já cadastrado ;)";
+  input.placeholder = "e-mail já cadastrado =D";
   resetInput(input);
 }
 
