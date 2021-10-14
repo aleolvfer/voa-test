@@ -1,3 +1,1 @@
-Acesse.
-
-[voatest](https://voatest.netlify.app/)
+Acesse: [voatest.netlify.app](https://voatest.netlify.app/)
