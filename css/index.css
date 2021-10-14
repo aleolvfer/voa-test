@@ -164,7 +164,7 @@ ul li {
   color: #DDD;
 }
 
-.box-2 button {
+.box-2 .button {
   padding: 10px;
   background-color: black;
   border: none;
@@ -172,6 +172,7 @@ ul li {
   color: white;
   font-family: "Space Mono", monospace;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 footer {

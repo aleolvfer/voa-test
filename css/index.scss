@@ -133,7 +133,7 @@ ul {
   color: #DDD;
 }
 
-.box-2 button {
+.box-2 .button {
   padding: 10px;
   background-color: black;
   border: none;
@@ -141,6 +141,7 @@ ul {
   color: white;
   font-family: $primaryFont;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 footer {
