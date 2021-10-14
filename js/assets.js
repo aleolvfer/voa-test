@@ -28,3 +28,9 @@ function emailInvalido(input) {
   input.placeholder = "e-mail inválido.";
   resetInput(input);
 }
+
+function recaptchaCallBack() {
+  let submitInput = document.querySelector(".button");
+  submitInput.removeAttribute("disabled");
+  submitInput.style.cursor = "pointer";
+}
