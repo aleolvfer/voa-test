@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="./css/index.css">
   <link rel="stylesheet" type="text/css" href="./css/media.css">
   <link rel="stylesheet" type="text/css" href="./css/wave.css">
+  <script src="https://google.com/recaptcha/api.js"></script>
   <title>ISZI</title>
 </head>
 
@@ -24,14 +25,15 @@
   <div class="container">
 
     <div class="logotipo-mobile">
-      <img src="./images/logotipo_black.png">
+      <img src="./images/logotipo_black.png" alt="ISZI Cosméticos">
     </div>
 
-    <img src="./images/background-min_Easy-Resize.com.jpg" class="img-bg">
+    <img src="./images/background-min_Easy-Resize.com.jpg" class="img-bg"
+      alt="Mulher de olhos fechados com a mão no rosto">
 
     <div class="box-2">
       <div class="logotipo">
-        <img src="./images/logotipo_black.png">
+        <img src="./images/logotipo_black.png" alt="ISZI Cosméticos">
       </div>
       <section class="wave-container">
         <br><br>
@@ -42,8 +44,8 @@
       <div class="div-icons">
         <p>Em breve sua melhor marca<br>de cosméticos.</p>
         <div class="icons">
-          <img src="./images/ic_facebook.png">
-          <img src="./images/ic_instagram.png">
+          <img src="./images/ic_facebook.png" alt="Logo do Facebook">
+          <img src="./images/ic_instagram.png" alt="Logo do Instagran">
         </div>
       </div>
 
@@ -52,6 +54,9 @@
           <legend class="legend">Quer saber mais?</legend>
           <input type="text" name="email" id="email" placeholder="seu email" required />
           <button>enviar</button>
+          <div>
+            <div class="g-recaptcha" data-sitekey="6Lfqn8wcAAAAAD8WPx4H9HdB58egzRF5JmkRXVSf"></div>
+          </div>
         </fieldset>
       </form>
 
