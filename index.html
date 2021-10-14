@@ -49,24 +49,23 @@
         </div>
       </div>
 
-      <form>
+      <form action="#">
         <fieldset>
           <legend class="legend">Quer saber mais?</legend>
           <input type="text" name="email" id="email" placeholder="seu email" required />
-          <input type="submit" value="enviar" class="button">
+          <input type="submit" value="enviar" class="button" disabled>
           <div>
-            <div class="g-recaptcha" data-sitekey="6Lfqn8wcAAAAAD8WPx4H9HdB58egzRF5JmkRXVSf"></div>
+            <div class="g-recaptcha" data-sitekey="6Lfqn8wcAAAAAD8WPx4H9HdB58egzRF5JmkRXVSf"
+              data-callback="recaptchaCallBack"></div>
           </div>
         </fieldset>
       </form>
 
     </div>
 
-  </div>
-
-  <footer>
-    <p>© All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>© All Rights Reserved</p>
+    </footer>
 
   </div>
 

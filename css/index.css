@@ -173,6 +173,7 @@ ul li {
   font-family: "Space Mono", monospace;
   font-size: 12px;
   margin-bottom: 10px;
+  cursor: not-allowed;
 }
 
 footer {
