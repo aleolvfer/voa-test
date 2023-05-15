@@ -42,6 +42,11 @@ ul {
   li {
     text-transform: uppercase;
     letter-spacing: 7.5px;
+
+    .dot {
+      font-size: 30px;
+      transform: translate(0px, -8px);
+    }
   }
 }
 
