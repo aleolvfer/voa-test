@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "description": "PWA teste.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "voatest.netlify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "voatest.netlify",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
