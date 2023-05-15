@@ -72,7 +72,11 @@
     </footer>
 
   </div>
-
+  <script>
+    if(typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwabuilder-sw.js')
+    }
+  </script>
   <script src="./js/assets.js"></script>
   <script src="./js/email-validation.js"></script>
 </body>
