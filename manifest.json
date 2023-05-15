@@ -7,10 +7,11 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "voatest.netlify",
-  "start_url": "/",
+  "start_url": "/https://voatest.netlify.app/",
   "theme_color": "#000000",
   "categories": [],
   "screenshots": [],
   "icons": [],
-  "shortcuts": []
+  "shortcuts": [],
+  "lang": "pt"
 }
