@@ -32,7 +32,7 @@ header {
 ul {
   @include flex-around();
   align-items: center;
-
+  list-style: none;
   width: 85%;
 
   li:first-child {

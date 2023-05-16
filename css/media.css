@@ -2,13 +2,8 @@
   header ul {
     width: 80%;
     font-size: 16px;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: unset;
+    flex-direction: column;
   }
   header li:first-child {
     list-style: disc;
@@ -18,21 +13,14 @@
     line-height: 30px;
   }
   .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     z-index: inherit;
     position: inherit;
   }
   .logotipo-mobile {
     margin: 200px 40px 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .logotipo-mobile img {
     width: 67px;
@@ -88,5 +76,4 @@
   footer {
     display: block;
   }
-}
-/*# sourceMappingURL=media.css.map */
+}/*# sourceMappingURL=media.css.map */
