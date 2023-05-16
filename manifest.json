@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "voatest.netlify",
-  "start_url": "index.html",
+  "start_url": "/",
   "theme_color": "#000000",
   "categories": [],
   "screenshots": [
