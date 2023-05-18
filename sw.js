@@ -47,7 +47,8 @@ self.addEventListener('fetch', (event) => {
 });
 
 
-BarcodeDetector.getSupportedFormats().then((supportedFormats) => {
+const barcodeDetector = new BarcodeDetector();
+barcodeDetector.getSupportedFormats().then((supportedFormats) => {
   supportedFormats.forEach((format) => console.log(format));
 });
 
