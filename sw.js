@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
 });
 
 const barcodeDetector = new BarcodeDetector({
-  formats: ["code_39", "codabar", "ean_13"],
+  formats: ['qr_code',],
 });
 
 // check compatibility

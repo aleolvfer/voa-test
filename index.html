@@ -73,6 +73,9 @@
 
   </div>
   <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
   </script>
   <script src="./js/assets.js"></script>
   <script src="./js/email-validation.js"></script>
