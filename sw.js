@@ -46,7 +46,11 @@ self.addEventListener('fetch', (event) => {
   }
 });
 
-const barcodeDetector = new BarcodeDetector({
+/* const barcodeDetector = new BarcodeDetector({
+  formats: ['qr_code',],
+}); */
+
+const barcodeDetector = new FaceDetector({
   formats: ['qr_code',],
 });
 
