@@ -46,11 +46,12 @@ self.addEventListener('fetch', (event) => {
   }
 });
 
-/* const barcodeDetector = new BarcodeDetector({
-  formats: ['qr_code',],
-}); */
 
-const barcodeDetector = new FaceDetector({
+BarcodeDetector.getSupportedFormats().then((supportedFormats) => {
+  supportedFormats.forEach((format) => console.log(format));
+});
+
+/* const barcodeDetector = new BarcodeDetector({
   formats: ['qr_code',],
 });
 
@@ -59,4 +60,4 @@ if (barcodeDetector) {
   console.log("Barcode Detector supported!");
 } else {
   console.log("Barcode Detector is not supported by this browser.");
-}
+} */
