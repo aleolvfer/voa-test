@@ -5,7 +5,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 const CACHE = "pwabuilder-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const pages = ["./offline.html", "./secondpage.html"];
+const offlineFallbackPage = "offline.html";
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -17,7 +17,11 @@ self.addEventListener('install', async (event) => {
   console.log("Service worker installed");
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.addAll(pages))
+      .then((cache) => cache.addAll([
+        './',
+        './offline.html',
+        './secondpage.html'
+      ]))
   );
 });
 
@@ -40,7 +44,7 @@ self.addEventListener('fetch', (event) => {
       } catch (error) {
 
         const cache = await caches.open(CACHE);
-        const cachedResp = await cache.match(pages);
+        const cachedResp = await cache.match(offlineFallbackPage);
         return cachedResp;
       }
     })());
