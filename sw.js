@@ -19,6 +19,10 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE)
       .then((cache) => cache.addAll([
         './',
+        './css/*',
+        './fonts/*',
+        './imagens/*',
+        './js/*',
         './offline.html',
         './secondpage.html'
       ]))
