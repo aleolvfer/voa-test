@@ -5,7 +5,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 const CACHE = "pwabuilder-page";
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
-const offlineFallbackPage = "offline.html";
+const pages = ["./offline.html", "./secondpage.html"];
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -14,9 +14,10 @@ self.addEventListener("message", (event) => {
 });
 
 self.addEventListener('install', async (event) => {
+  console.log("Service worker installed");
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
+      .then((cache) => cache.addAll(pages))
   );
 });
 
@@ -45,19 +46,3 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
-
-const barcodeDetector = new BarcodeDetector();
-barcodeDetector.getSupportedFormats().then((supportedFormats) => {
-  supportedFormats.forEach((format) => console.log(format));
-});
-
-/* const barcodeDetector = new BarcodeDetector({
-  formats: ['qr_code',],
-});
-
-// check compatibility
-if (barcodeDetector) {
-  console.log("Barcode Detector supported!");
-} else {
-  console.log("Barcode Detector is not supported by this browser.");
-} */
