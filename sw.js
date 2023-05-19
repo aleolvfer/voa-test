@@ -35,9 +35,9 @@ self.addEventListener('fetch', async (event) => {
   const url = new URL(req.url);
 
   if(url.login === location.origin) {
-    e.respondWith(cacheFirst(req));
+    event.respondWith(cacheFirst(req));
   }else {
-    e.respondWith(networkAndCache(req));
+    event.respondWith(networkAndCache(req));
   }
 });
 
