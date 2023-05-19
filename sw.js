@@ -13,7 +13,7 @@ self.addEventListener("message", (event) => {
   }
 });
 
-self.addEventListener('install', async (event) => {
+self.addEventListener('install', (event) => {
   console.log("Service worker installed");
   event.waitUntil(
     caches.open(CACHE)
@@ -23,30 +23,39 @@ self.addEventListener('install', async (event) => {
         './secondpage.html'
       ]))
   );
+  return self.skipWaiting();
 });
 
-if (workbox.navigationPreload.isSupported()) {
-  workbox.navigationPreload.enable();
-}
+self.addEventListener('activate', (e) => {
+  self.clients.claim();
+})
 
-self.addEventListener('fetch', (event) => {
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        const preloadResp = await event.preloadResponse;
+self.addEventListener('fetch', async (event) => {
+  const req = event.request;
+  const url = new URL(req.url);
 
-        if (preloadResp) {
-          return preloadResp;
-        }
-
-        const networkResp = await fetch(event.request);
-        return networkResp;
-      } catch (error) {
-
-        const cache = await caches.open(CACHE);
-        const cachedResp = await cache.match(offlineFallbackPage);
-        return cachedResp;
-      }
-    })());
+  if(url.login === location.origin) {
+    e.respondWith(cacheFirst(req));
+  }else {
+    e.respondWith(networkAndCache(req));
   }
 });
+
+async function cacheFirst(req) {
+  const cache = await caches.open(CACHE);
+  const cached = await cache.match(req);
+
+  return cached || fetch(req);
+}
+
+async function networkAndCache(req) {
+  const cache = await caches.open(CACHE);
+  try {
+    const refresh = await fetch(req);
+    await cache.put(req, refresh.clone());
+    return refresh;
+  }catch (e){
+    const cached = await cache.match(req);
+    return cached;
+  }
+}
