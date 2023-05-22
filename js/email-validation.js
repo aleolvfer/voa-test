@@ -9,13 +9,13 @@ document.querySelector(".button").addEventListener("click", async event => {
     alert("Este browser não suporta notificações de Desktop");
   }
   else if (Notification.permission === "granted") {
-    var notification = new Notification("Hi there!", options);
+    return new Notification("Hi there!", options);
   }
 
   else if (Notification.permission !== 'denied') {
     Notification.requestPermission(function (permission) {
       if (permission === "granted") {
-        var notification = new Notification("Hi there!", options);
+        return new Notification("Hi there!", options);
       }
     });
   }
