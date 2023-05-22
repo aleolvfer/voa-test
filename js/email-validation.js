@@ -1,5 +1,5 @@
 document.querySelector(".button").addEventListener("click", async event => {
-  event.preventDefault();
+ // event.preventDefault();
 /* 
   var options = {
     'body': 'lalalalalalala',
