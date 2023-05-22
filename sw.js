@@ -1,6 +1,6 @@
 // This is the "Offline page" service worker
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+//importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 const CACHE = "pwabuilder-page";
 
@@ -29,6 +29,12 @@ self.addEventListener('install', (event) => {
   );
   return self.skipWaiting();
 });
+
+self.addEventListener('push', (event) => {
+  var notificaion = event.data.json();
+  console.log(notificaion, 'será?????????')
+  self.registration.showNotification(notificaion.body)
+})
 
 self.addEventListener('activate', (e) => {
   self.clients.claim();
@@ -64,8 +70,3 @@ async function networkAndCache(req) {
   }
 }
 
-self.addEventListener('push', (event) => {
-  var notificaion = event.data.json();
-  console.log(notificaion, 'será?????????')
-  self.registration.showNotification(notificaion.body)
-})

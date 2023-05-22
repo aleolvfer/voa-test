@@ -47,7 +47,7 @@ document.querySelector(".button").addEventListener("click", async event => {
 });
 
 setTimeout(() => {
-  console.log("uhuuuuuullll");
+  console.log("kkkkkk");
 
   if (!("Notification" in window)) {
     alert("Este browser não suporta notificações de Desktop");
