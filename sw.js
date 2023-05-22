@@ -63,3 +63,9 @@ async function networkAndCache(req) {
     return cached;
   }
 }
+
+self.addEventListener('push', (event) => {
+  var notificaion = event.data.json();
+  console.log(notificaion, 'será?????????')
+  self.registration.showNotification(notificaion.body)
+})
