@@ -1,6 +1,6 @@
 document.querySelector(".button").addEventListener("click", async event => {
   event.preventDefault();
-
+/* 
   var options = {
     'body': 'lalalalalalala',
   };
@@ -21,6 +21,9 @@ document.querySelector(".button").addEventListener("click", async event => {
       }
     });
   }
+   */
+
+  
 
 
   /* let input = document.getElementById("email");
@@ -42,3 +45,24 @@ document.querySelector(".button").addEventListener("click", async event => {
   } */
 
 });
+
+setTimeout(() => {
+  console.log("uhuuuuuullll");
+
+  if (!("Notification" in window)) {
+    alert("Este browser não suporta notificações de Desktop");
+  }
+  else if (Notification.permission === "granted") {
+    console.log("seráaa??")
+    var notification = new Notification("Hi there!");
+  }
+
+  else if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function (permission) {
+      if (permission === "granted") {
+        console.log("é foiiii??")
+        var notification = new Notification("Hi there!");
+      }
+    });
+  }
+}, "5000");
