@@ -19,10 +19,6 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE)
       .then((cache) => cache.addAll([
         './',
-        './css/*',
-        './fonts/*',
-        './imagens/*',
-        './js/*',
         './offline.html',
         './secondpage.html'
       ]))
@@ -33,6 +29,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('push',  (event) => {
   var notificaion = event.data.json();
   console.log(notificaion, 'será?????????')
+  self.registration.sendNotification('testeeeeee', {})
   self.registration.showNotification(notificaion.body)
 })
 
