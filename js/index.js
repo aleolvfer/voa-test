@@ -1,5 +1,4 @@
 document.querySelector(".button").addEventListener("click", async (event) => {
-  event.preventDefault();
 
   let sw = await navigator.serviceWorker.ready;
   let push = await sw.pushManager.subscribe({

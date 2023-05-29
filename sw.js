@@ -30,7 +30,7 @@ self.addEventListener('install', (event) => {
   return self.skipWaiting();
 });
 
-self.addEventListener('push', (event) => {
+self.addEventListener('push',  (event) => {
   var notificaion = event.data.json();
   console.log(notificaion, 'será?????????')
   self.registration.showNotification(notificaion.body)
