@@ -1,5 +1,5 @@
-async function subscribe(event) {
-event.preventDefault();
+async function subscribe() {
+  
   let sw = await navigator.serviceWorker.ready;
   let push = await sw.pushManager.subscribe({
     userVisibleOnly: true,
