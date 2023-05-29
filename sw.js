@@ -41,7 +41,7 @@ self.addEventListener('push',  (event) => {
   //var notificaion = event.data.json();
   //console.log(notificaion, 'será?????????')
   //console.log(notificaion.body, 'bodyyyy')
-  event.waitUntil(self.registration.sendNotification('testeeeeee', simpleNotification));
+  event.waitUntil(self.registration.showNotification('testeeeeee', simpleNotification));
   //self.registration.showNotification(notificaion.body)
 })
 
