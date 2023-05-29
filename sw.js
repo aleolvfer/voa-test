@@ -26,10 +26,21 @@ self.addEventListener('install', (event) => {
   return self.skipWaiting();
 });
 
+simpleNotification = {
+  title: 'Primeira notificação',
+  body: 'Corpo da notificação',
+  icon: 'https://voatest.netlify.app/images/logotipo_black.png',
+  data: {
+      dateOf : Date.now(),
+      primaryKey: 1
+  }
+};
+
+
 self.addEventListener('push',  (event) => {
   var notificaion = event.data.text();
   console.log(notificaion, 'será?????????')
-  event.waitUntil(self.registration.sendNotification('testeeeeee', {}));
+  event.waitUntil(self.registration.sendNotification('testeeeeee', simpleNotification));
   self.registration.showNotification(notificaion.body)
 })
 
