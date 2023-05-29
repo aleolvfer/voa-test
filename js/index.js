@@ -4,7 +4,7 @@ document.querySelector(".button").addEventListener("click", async (event) => {
   let sw = await navigator.serviceWorker.ready;
   let push = await sw.pushManager.subscribe({
     userVisibleOnly: true,
-    applicationServerKey: 'BIwQZIPjGIB3T96jLiBsmstcPfKxW2c7Gi4batqPe7-gtfEVHXQ0omFNFOg3bbHOgGgG2t7O7JFv-fOmLUpHQmE'
+    applicationServerKey: 'BNS5DErDHfwWDoBSQ0EH7tFM02BNfh9hwX9H_Fhf2fYzc_aWwQhHWc3EYHvAqgo73TN0tsonLTH9TvEYCyxwZwM'
 
   })
 
