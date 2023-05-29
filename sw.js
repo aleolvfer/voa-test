@@ -26,13 +26,13 @@ self.addEventListener('install', (event) => {
   return self.skipWaiting();
 });
 
-simpleNotification = {
+var simpleNotification = {
   title: 'Primeira notificação',
   body: 'Corpo da notificação',
   icon: 'https://voatest.netlify.app/images/logotipo_black.png',
   data: {
-      dateOf : Date.now(),
-      primaryKey: 1
+      dateOfArrival : Date.now(),
+      primaryKey: '1'
   }
 };
 
