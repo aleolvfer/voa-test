@@ -1,4 +1,4 @@
-document.querySelector(".button").addEventListener("click", async function subscribe(event) {
+async function subscribe(event) {
 event.preventDefault();
   let sw = await navigator.serviceWorker.ready;
   let push = await sw.pushManager.subscribe({
@@ -9,7 +9,7 @@ event.preventDefault();
   console.log('foiii???');
   console.log(JSON.stringify(push));
   console.log('seráaa??');
-});
+};
 
 
 /* 
