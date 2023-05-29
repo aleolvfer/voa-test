@@ -26,22 +26,36 @@ self.addEventListener('install', (event) => {
   return self.skipWaiting();
 });
 
-var simpleNotification = {
-  title: 'Primeira notificação',
-  body: 'Corpo da notificação',
-  icon: 'https://voatest.netlify.app/images/logotipo_black.png',
-  data: {
-      dateOfArrival : Date.now(),
-      primaryKey: '1'
-  }
-};
+
 
 
 self.addEventListener('push',  (event) => {
+  var simpleNotification = {
+    body: 'Corpo da notificação',
+    icon: 'https://voatest.netlify.app/images/logotipo_black.png',
+    vibrate: [100, 50, 100],
+    data: {
+        dateOfArrival : Date.now(),
+        primaryKey: '45'
+    },
+    actions: [
+      {
+        action: 'explore',
+        title: 'Tudo certo tiu?',
+        icon: 'https://static3.tcdn.com.br/files/924236/themes/115/img/settings/logotipo-inverno.png'
+      },
+      {
+        action: 'close',
+        title: 'Close',
+        icon: 'https://static3.tcdn.com.br/files/924236/themes/115/img/settings/logotipo-inverno.png'
+      }
+    ]
+  };
+  event.waitUntil(self.registration.showNotification('testeeeeee', simpleNotification));
+
   //var notificaion = event.data.json();
   //console.log(notificaion, 'será?????????')
   //console.log(notificaion.body, 'bodyyyy')
-  event.waitUntil(self.registration.showNotification('testeeeeee', simpleNotification));
   //self.registration.showNotification(notificaion.body)
 })
 
