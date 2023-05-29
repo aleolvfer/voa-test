@@ -38,10 +38,10 @@ simpleNotification = {
 
 
 self.addEventListener('push',  (event) => {
-  //var notificaion = event.data.text();
+  var notificaion = event.data.json();
   //console.log(notificaion, 'será?????????')
-  //event.waitUntil(self.registration.sendNotification('testeeeeee', simpleNotification));
-  self.registration.sendNotification('testeeeeee', simpleNotification)
+  console.log(notificaion.body, 'bodyyyy')
+  event.waitUntil(self.registration.sendNotification('testeeeeee', simpleNotification));
   //self.registration.showNotification(notificaion.body)
 })
 
