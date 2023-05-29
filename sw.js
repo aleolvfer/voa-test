@@ -27,7 +27,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('push',  (event) => {
-  var notificaion = event.data.json();
+  var notificaion = event.data.text();
   console.log(notificaion, 'será?????????')
   event.waitUntil(self.registration.sendNotification('testeeeeee', {}));
   self.registration.showNotification(notificaion.body)
