@@ -1,4 +1,4 @@
-document.querySelector(".button").addEventListener("click", async (event) => {
+document.querySelector(".button").addEventListener("click", async function subscribe(event) {
 
   let sw = await navigator.serviceWorker.ready;
   let push = await sw.pushManager.subscribe({
