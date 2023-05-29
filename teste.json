@@ -1,0 +1,223 @@
+{
+    "type": "structure",
+    "attributes": {
+      "banners": {
+        "type": "list",
+        "items": [
+          {
+            "type": "structure",
+            "attributes": {
+              "id": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-KIT-QUERO-LOIRO-INTERESSE-DEC2022"
+                }
+              },
+              "mobile": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/kit-quero-loiro"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2023-01-home-banner-kit-loiros-mobile.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "desktop": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/kit-quero-loiro"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2023-01-home-banner-kit-loiros-desktop.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "creative": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-KIT-QUERO-LOIRO-INTERESSE-DEC2022"
+                }
+              }
+            }
+          },
+          {
+            "type": "structure",
+            "attributes": {
+              "id": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-MES-DAS-MAES-ISZI"
+                }
+              },
+              "mobile": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/mes-das-maes"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2023-05-home-banner-hidratacao-inverno-mobile.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "desktop": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/mes-das-maes"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2023-05-home-banner-hidratacao-inverno-desktop.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "creative": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-MES-DAS-MAES"
+                }
+              }
+            }
+          },
+          {
+            "type": "structure",
+            "attributes": {
+              "id": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-SHAMPOO-A-SECO-LANCAMENTO-LAUREN"
+                }
+              },
+              "mobile": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/iszi-by-lauren"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2022-12-home-banner-lauren-mobile.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "desktop": {
+                "type": "structure",
+                "attributes": {
+                  "link": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://www.iszi.com.br/iszi-by-lauren"
+                    }
+                  },
+                  "image": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "https://cdn.croct.io/assets/app/88be53b3-4371-43ab-8177-ed2ea0fc6fc1/images/2022-12-home-banner-lauren-desktop.png"
+                    }
+                  },
+                  "target": {
+                    "type": "text",
+                    "value": {
+                      "type": "static",
+                      "value": "_self"
+                    }
+                  }
+                }
+              },
+              "creative": {
+                "type": "text",
+                "value": {
+                  "type": "static",
+                  "value": "BANNER-LANCAMENTO-LAUREN"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
