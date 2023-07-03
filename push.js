@@ -19,4 +19,3 @@ let sub = {
 };
 
 push.sendNotification(sub, 'notificandoo??');
-console.log('nun deu?');

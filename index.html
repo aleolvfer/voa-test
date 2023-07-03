@@ -12,7 +12,15 @@
   <script src="https://google.com/recaptcha/api.js"></script>
   <title>ISZI</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-777G5S64VB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-777G5S64VB');
+</script>
 <body>
   <header>
     <ul>
@@ -88,7 +96,6 @@
       let push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: 'BNS5DErDHfwWDoBSQ0EH7tFM02BNfh9hwX9H_Fhf2fYzc_aWwQhHWc3EYHvAqgo73TN0tsonLTH9TvEYCyxwZwM'
-    
       })
       console.log('foiii???');
       console.log(JSON.stringify(push));
