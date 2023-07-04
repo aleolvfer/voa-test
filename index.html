@@ -91,7 +91,13 @@
     }
 
     async function subscribe() {
-  
+      window.dataLayer.push({
+        'event': 'eventGA',
+        'category': 'ofertas',
+        'action': 'clicou',
+        'label': 'botao:promotion-popup',
+        'nonInteraction': false
+      })
       let sw = await navigator.serviceWorker.ready;
       let push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
